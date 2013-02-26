@@ -28,8 +28,8 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0" RenderTransformOrigin="0.501,0.51">
-            <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlay_Click" IsEnabled="True" Width="140" Visibility="Visible"/>
-            <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPauze_Click" IsEnabled="False" Width="140" Visibility="Collapsed"/>
+            <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlay_Click" IsEnabled="True" Width="140" Visibility="Visible" Margin="0,505,0,0"/>
+            <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPauze_Click" IsEnabled="False" Width="140" Visibility="Collapsed" Margin="0,505,0,0"/>
         </Grid>
 
     </Grid>
