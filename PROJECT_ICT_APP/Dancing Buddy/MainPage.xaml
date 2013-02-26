@@ -22,12 +22,16 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="ApplicationTitle" Text="Dancing Buddy" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Home" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0" RenderTransformOrigin="0.501,0.51">
+            <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPlay_Click" IsEnabled="True" Width="140" Visibility="Visible"/>
+            <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnPauze_Click" IsEnabled="False" Width="140" Visibility="Collapsed"/>
+        </Grid>
+
     </Grid>
- 
+
 </phone:PhoneApplicationPage>

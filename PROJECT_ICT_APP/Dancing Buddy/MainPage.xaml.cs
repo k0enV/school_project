@@ -20,5 +20,22 @@ namespace Dancing_Buddy
         {
             InitializeComponent();
         }
+
+        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        {
+            btnPlay.IsEnabled = false;
+            btnPauze.IsEnabled = true;
+            btnPlay.Visibility = Visibility.Collapsed;
+            btnPauze.Visibility = Visibility.Visible;
+        }
+
+        private void btnPauze_Click(object sender, RoutedEventArgs e)
+        {
+            btnPlay.IsEnabled = true;
+            btnPauze.IsEnabled = false;
+            btnPlay.Visibility = Visibility.Visible; 
+            btnPauze.Visibility = Visibility.Collapsed;
+        }
+
     }
 }
