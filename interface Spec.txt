@@ -1,0 +1,7 @@
+INTERFACE OBJECTEN
+-Play button
+-Pause button
+-Stop button
+
+DOEL
+-Play/Pause button --> Als er op de play button wordt gedrukt zal deze veranderen in een Pause button.
