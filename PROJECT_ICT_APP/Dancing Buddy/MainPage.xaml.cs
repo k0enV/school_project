@@ -45,5 +45,10 @@ namespace Dancing_Buddy
             btnPauze.Visibility = Visibility.Collapsed;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("knop werkt");
+        }
+
     }
 }

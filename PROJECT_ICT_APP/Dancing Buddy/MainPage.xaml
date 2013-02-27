@@ -19,20 +19,31 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        
+        <Image Grid.Row="0" x:Name="imgHeadphone" Source="headphone.png" Visibility="Visible" Width="100" Height="100" HorizontalAlignment="Left" />
+        
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Dancing Buddy" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="Home" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="TitlePage" Text="Dancing Buddy" Margin="9,-7,0,0" FontSize="50" FontFamily="Arial" Foreground="Red" HorizontalAlignment="Center">
+            </TextBlock>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="5,0,5,0" RenderTransformOrigin="0.501,0.51">
+        <Grid x:Name="ContentPanel"  Grid.Row="1" Margin="5,0,5,0" RenderTransformOrigin="0.501,0.51">
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-           
+
+            <Button Height="100" Width="100" Click="Button_Click" Visibility="Visible">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="play.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
             <Line Grid.Row="1" StrokeThickness="2" Stroke="Gray" HorizontalAlignment="Stretch" VerticalAlignment="Top" Stretch="Fill" X1="0" Y1="0" X2="1" Y2="0"></Line>
 
             <Grid Grid.Row="1">
@@ -42,11 +53,12 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                    <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" Grid.Column="0" Click="btnPlay_Click" Visibility="Visible" />
-                    <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" Grid.Column="0" Click="btnPauze_Click" Visibility="Collapsed" />
-                    <Button Background="Red" Foreground="White" x:Name="btnStop" Content="Stop" Grid.Column="2" Click="btnStop_Click" IsEnabled="False"></Button>
+                <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" Grid.Column="0" Click="btnPlay_Click" Visibility="Visible" ></Button>
+                <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" Grid.Column="0" Click="btnPauze_Click" Visibility="Collapsed" ></Button>
+                <Button Background="Red" Foreground="White" x:Name="btnStop" Content="Stop" Grid.Column="2" Click="btnStop_Click" IsEnabled="False"></Button>
             </Grid>
         </Grid>
+        
 
     </Grid>
 
