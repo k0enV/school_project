@@ -4,50 +4,24 @@ using System.Linq;
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
+using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
 
 namespace Dancing_Buddy
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class Page1 : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        
+        public Page1()
         {
             InitializeComponent();
+            //this.Loaded += new RoutedEventHandler(Dancing_Loaded);
         }
 
-        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        private void btnDancing_Click(object sender, RoutedEventArgs e)
         {
-            btnStop.IsEnabled = true;
-
-            btnPlay.Visibility = Visibility.Collapsed;
-            btnPauze.Visibility = Visibility.Visible;
-        }
-
-        private void btnPauze_Click(object sender, RoutedEventArgs e)
-        {
-            btnStop.IsEnabled = true;
-
-            btnPlay.Visibility = Visibility.Visible; 
-            btnPauze.Visibility = Visibility.Collapsed;
-        }
-
-        private void btnStop_Click(object sender, RoutedEventArgs e)
-        {
-            btnStop.IsEnabled = false;
-
-            btnPlay.Visibility = Visibility.Visible;
-            btnPauze.Visibility = Visibility.Collapsed;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("knop werkt");
+            NavigationService.Navigate(new Uri("/DancingBuddy.xaml", UriKind.Relative));
         }
 
     }
