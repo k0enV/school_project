@@ -24,8 +24,7 @@
         
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="TitlePage" Text="Dancing Buddy" Margin="9,-7,0,0" FontSize="50" FontFamily="Arial" Foreground="Red" HorizontalAlignment="Center">
-            </TextBlock>
+            <TextBlock x:Name="TitlePage" Text="Dancing Buddy" Margin="9,-7,0,0" FontSize="50" FontFamily="Arial" Foreground="Red" HorizontalAlignment="Center"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -35,14 +34,6 @@
                 <RowDefinition Height="5*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-
-            <Button Height="100" Width="100" Click="Button_Click" Visibility="Visible">
-                <Button.Template>
-                    <ControlTemplate>
-                        <Image Source="play.png"/>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
 
             <Line Grid.Row="1" StrokeThickness="2" Stroke="Gray" HorizontalAlignment="Stretch" VerticalAlignment="Top" Stretch="Fill" X1="0" Y1="0" X2="1" Y2="0"></Line>
 

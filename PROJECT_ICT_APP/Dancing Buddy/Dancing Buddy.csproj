@@ -64,6 +64,9 @@
     <Compile Include="DancingBuddy.xaml.cs">
       <DependentUpon>DancingBuddy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="dBWarner.xaml.cs">
+      <DependentUpon>dBWarner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="DancingBuddy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="dBWarner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

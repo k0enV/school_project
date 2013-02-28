@@ -16,12 +16,16 @@ namespace Dancing_Buddy
         public Page1()
         {
             InitializeComponent();
-            //this.Loaded += new RoutedEventHandler(Dancing_Loaded);
         }
 
         private void btnDancing_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/DancingBuddy.xaml", UriKind.Relative));
+        }
+
+        private void btnDBwarner_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/dBWarner.xaml", UriKind.Relative));
         }
 
     }
