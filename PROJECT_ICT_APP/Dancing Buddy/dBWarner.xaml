@@ -36,9 +36,14 @@
             <Line Grid.Row="1" StrokeThickness="2" Stroke="Gray" HorizontalAlignment="Stretch" VerticalAlignment="Top" Stretch="Fill" X1="0" Y1="0" X2="1" Y2="0"></Line>
 
             <Grid Grid.Row="1">
-
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
                 <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" Grid.Column="0" Click="btnPlay_Click" Visibility="Visible" ></Button>
                 <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" Grid.Column="0" Click="btnPauze_Click" Visibility="Collapsed" ></Button>
+                <Button Background="Blue" Foreground="White" x:Name="btnClose" Content="Close" Grid.Column="2" Click="btnClose_Click" IsEnabled="True"></Button>
             </Grid>
         </Grid>
 

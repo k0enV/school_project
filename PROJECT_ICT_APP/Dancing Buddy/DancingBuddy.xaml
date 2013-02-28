@@ -46,7 +46,8 @@
 
                 <Button Background="Green" Foreground="White" x:Name="btnPlay" Content="Play" Grid.Column="0" Click="btnPlay_Click" Visibility="Visible" ></Button>
                 <Button Background="Orange" Foreground="White" x:Name="btnPauze" Content="Pauze" Grid.Column="0" Click="btnPauze_Click" Visibility="Collapsed" ></Button>
-                <Button Background="Red" Foreground="White" x:Name="btnStop" Content="Stop" Grid.Column="2" Click="btnStop_Click" IsEnabled="False"></Button>
+                <Button Background="Red" Foreground="White" x:Name="btnStop" Content="Stop" Grid.Column="1" Click="btnStop_Click" IsEnabled="False"></Button>
+                <Button Background="Blue" Foreground="White" x:Name="btnClose" Content="Close" Grid.Column="2" Click="btnClose_Click" IsEnabled="True"></Button>
             </Grid>
         </Grid>
         

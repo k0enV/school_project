@@ -28,5 +28,10 @@ namespace Dancing_Buddy
             btnPlay.Visibility = Visibility.Visible;
             btnPauze.Visibility = Visibility.Collapsed;
         }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
     }
 }
