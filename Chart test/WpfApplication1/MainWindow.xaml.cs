@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WpfApplication1
 {
@@ -57,14 +58,13 @@ namespace WpfApplication1
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            if (slider.Value > 50)
-            {
-                F1 = Convert.ToInt32(slider.Value);
-            }
+            
+
+            F1 = Convert.ToInt32(slider.Value);
+            showColumnChart();
 
             
             textb.Text = slider.Value.ToString();
-            columnChart.
 
         }
 
