@@ -19,9 +19,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <Image Grid.Row="0" x:Name="imgHeadphone" Source="headphone.png" Visibility="Visible" Width="100" Height="100" HorizontalAlignment="Left" />
-        
+
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="TitlePage" Text="Dancing Buddy" Margin="9,-7,0,0" FontSize="50" FontFamily="Arial" Foreground="Red" HorizontalAlignment="Center"/>

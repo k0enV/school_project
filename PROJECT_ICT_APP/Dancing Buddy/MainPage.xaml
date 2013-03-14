@@ -37,7 +37,7 @@
                 
                 <TextBlock Grid.Row="0" Text="bla bla bla" FontSize="30"/>
                 <Button x:Name="btnDancing" Grid.Row="1" Content="Dancing Buddy" Background="Blue" Click="btnDancing_Click" Width="250" Height="150"/>
-                <Button x:Name="btnDBwarner" Grid.Row="2" Content="dB Warner" Background="Magenta" Width="250" Height="150" Click="btnDBwarner_Click"/>
+                <Button x:Name="btnDBwarner" Grid.Row="2" Content="dB Warner" Background="Red" Width="250" Height="150" Click="btnDBwarner_Click"/>
             </Grid>
         </Grid>
     </Grid>
